@@ -2,6 +2,9 @@ import { Configuration, OpenAIApi } from 'openai';
 import { Telegraf } from 'telegraf';
 import { CreateImageRequest } from 'openai/api';
 import axios from 'axios';
+import { config } from 'dotenv';
+
+config();
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_KEY,
